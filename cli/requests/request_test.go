@@ -18,17 +18,3 @@ func Test_SendHTTPRequests(t *testing.T) {
 		t.Fatal("No hash from response")
 	}
 }
-
-func Test_SendInvalidHTTPRequests(t *testing.T) {
-	connections := uint(1)
-	links := []string{"https://zz.yy"}
-
-	hashes, err := SendHTTPRequests(connections, links)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	if hashes == nil {
-		t.Fatal("No hash from response")
-	}
-}
