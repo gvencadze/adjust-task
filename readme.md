@@ -6,9 +6,9 @@ This is simple CLI to send multiple http requests and get md5 hashes of response
 ## Technologies
 * Go 1.16.3
 
-## Run
+## Build & run
 ```
 git clone github.com/gvencadze/adjust-task
 cd /adjust-task/cmd/hash && go build main.go
-go run ./main -p 5 vk.com/ac
+./main -p 5 vk.com/ac
 ```
